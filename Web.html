@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آژمان | برنامه‌نویس و توسعه‌دهنده وب</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Tahoma', sans-serif;
+            background-color: #0e0e0e;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            padding: 1rem 2rem;
+            background-color: rgba(0,0,0,0.8);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #00f7ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #0e0e0e 0%, #1c1c1c 100%);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #00f7ff;
+        }
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+            opacity: 0.9;
+        }
+        .section {
+            padding: 3rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: #1c1c1c;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .card:hover {
+            border-color: #00f7ff;
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #000;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">درباره من</a>
+            <a href="#skills">مهارت‌ها</a>
+            <a href="#projects">پروژه‌ها</a>
+            <a href="#contact">تماس</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>سلام، من آژمان هستم</h1>
+        <p>برنامه‌نویس وب، علاقه‌مند به امنیت سایبری و ایده‌پردازی خلاقانه. هدف من ساخت پروژه‌هایی است که هم در ایران و هم در سطح بین‌المللی بدرخشد.</p>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>مهارت‌ها</h2>
+        <div class="skills">
+            <div class="card">HTML & CSS</div>
+            <div class="card">JavaScript & React</div>
+            <div class="card">Python</div>
+            <div class="card">امنیت شبکه و باگ‌بانتی</div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>پروژه‌ها</h2>
+        <div class="projects">
+            <div class="card">🌐 رادار اجتماعی نیاز فوری</div>
+            <div class="card">🛠 مارکت‌پلیس خدمات کوتاه‌مدت</div>
+            <div class="card">📚 Urban Dictionary ایرانی</div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>تماس با من</h2>
+        <p>ایمیل: 
+            <a href="mailto:m9111312119.mathes@email.com" style="color:#00f7ff;">
+                m9111312119.mathes@email.com
+            </a>
+        </p>
+        <p>تلفن: 
+            <a href="tel:+989303666752" style="color:#00f7ff;">
+                +98 930 366 6752
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        © 2025 آژمان - تمامی حقوق محفوظ است
+    </footer>
+
+</body>
+</html>
